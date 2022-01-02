@@ -31,6 +31,7 @@ li {
 
 div {
     border: 1px solid red;
+
 }
 
 body {
@@ -48,13 +49,15 @@ body {
 }
 
 header {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: rgb(224, 219, 255);
 }
+
 header ul {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    
 }
 
 header li {
@@ -62,7 +65,9 @@ header li {
     background-color: rgb(224, 219, 255);
     margin-left: 0.5em;
     margin-right: 0.5em;
-    
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+
 }
 
 header a{
@@ -74,29 +79,9 @@ header a{
     margin: 20;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main {
+main, footer {
     border: 1px solid red;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.footer {
-    border: 1px solid red;
-}
