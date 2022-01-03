@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Snegopad-izh.github.io/rsschool-cv/
