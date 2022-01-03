@@ -33,9 +33,6 @@ li {
     list-style: none;
 }
 
-div {
-    /*border: 1px solid red;*/
-}
 
 body {
     display: flex;
@@ -51,7 +48,6 @@ body {
     font-weight: 200;
     color: #301b28;
     font-family: 'Sen', sans-serif;
-   /* border: 1px solid red; */
 }
 
 .upper {
