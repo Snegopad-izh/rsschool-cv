@@ -29,48 +29,93 @@
                     </div>
                 </div>
             </div>
-            <div class="center__block">
-                <div class="myPhone">
+            <ul class="center__block">
+                <li class="myPhone">
                     <div class="phone__pic"></div>
                     <div class="myPhone__number">
                         +7 912 006 &2 73
                     </div>
-                </div>
-                <div class="myEmail">
+                </li>
+                <li class="myEmail">
                     <div class="email__pic"></div>
                     <div class="myEmail__adress">
                         snegopad.izh@gmail.com
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
             <div class="right__block">
-                <div class="soc__logos">
-                    <div class="soc-logo__wrapper">
+                <ul class="soc__logos">
+                    <li class="soc-logo__wrapper">
                         <div class="git__logo"></div>
                         <div class="spin"></div>
-                    </div>
-                    <div class="soc-logo__wrapper">
+                    </li>
+                    <li class="soc-logo__wrapper">
                         <div class="telegram__logo">
                             <div class="discord__logo"></div>
                         </div>
                         <div class="spin"></div>
-                    </div>
-                    <div class="soc-logo__wrapper">
+                    </li>
+                    <li class="soc-logo__wrapper">
                         <div class="telegram__logo">
                             <div class="telegram-logo__pic"></div>
                         </div>
                         <div class="spin"></div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div class="nameOfMyAcc">
                     snegopad-izh
                 </div>
             </div>
+            <nav class="navigation__box">
+                <ul class="navigation-box__list">
+                    <li class="navigation-box__item">
+                        <a href="#profile" class="navigation__link">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#main-skills" class="navigation__link">
+                            Main Skills
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#tools" class="navigation__link">
+                            Tools
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#education" class="navigation__link">
+                            Education
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#languages" class="navigation__link">
+                            Languages
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#courses" class="navigation__link">
+                            Courses
+                        </a>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#code-example" class="navigation__link">
+                            Code example
+                        </a>
+                    </li>
+                    </li>
+                    <li class="navigation-box__item">
+                        <a href="#work-experiences" class="navigation__link">
+                            Work Experiences
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main__wrapper">
             <div class="main-content__wrapper">
-                <section class="work__wrapper">
+                <section class="work__wrapper" id="profile">
                     <div class="profile__title">
                         <img src="/assets/svg/profile_logo.svg" alt="profile_pic" class="profile_logo">
                         <h2 class="profile_caption">Profile</h2>
@@ -90,7 +135,7 @@
                     </div>
                 </section>
                 <div class="twoBlockWrapper">
-                    <section class="twoBlockWrapper__left-block">
+                    <section class="twoBlockWrapper__left-block" id="main-skills">
                         <div class="profile__title">
                             <img src="/assets/svg/skills_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Main&nbsp;Skills</h2>
@@ -123,7 +168,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="twoBlockWrapper__right-block">
+                    <section class="twoBlockWrapper__right-block" id="tools">
                         <div class="profile__title">
                             <img src="/assets/svg/tools_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Tools</h2>
@@ -169,7 +214,7 @@
                     </section>
                 </div>
                 <div class="twoBlockWrapper">
-                    <section class="twoBlockWrapper__left-block">
+                    <section class="twoBlockWrapper__left-block" id="education">
                         <div class="profile__title">
                             <img src="/assets/svg/education_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Education</h2>
@@ -184,7 +229,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="twoBlockWrapper__right-block">
+                    <section class="twoBlockWrapper__right-block" id="languages">
                         <div class="profile__title">
                             <img src="/assets/svg/language_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Languages</h2>
@@ -207,7 +252,7 @@
                     </section>
                 </div>
                 <div class="twoBlockWrapper">
-                    <section class="twoBlockWrapper__left-block">
+                    <section class="twoBlockWrapper__left-block" id="courses">
                         <div class="profile__title">
                             <img src="/assets/svg/courses_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Courses</h2>
@@ -230,7 +275,7 @@
 
                         </ul>
                     </section>
-                    <section class="twoBlockWrapper__right-block">
+                    <section class="twoBlockWrapper__right-block" id="code-example">
                         <div class="profile__title">
                             <img src="/assets/svg/js_pic.svg" alt="skills_pic" class="profile_logo">
                             <h2 class="profile_caption">Code&nbsp;example</h2>
@@ -251,8 +296,7 @@ return i;
                         </ul>
                     </section>
                 </div>
-                
-                <section class="work__wrapper">
+                <section class="work__wrapper" id="work-experiences">
                     <div class="profile__title">
                         <img src="/assets/svg/work_pic.svg" alt="profile_pic" class="profile_logo">
                         <h2 class="profile_caption">Work&nbsp;Experiences</h2>
@@ -273,7 +317,12 @@ return i;
                                 <div class="work-content-road__line"></div>
                             </div>
                             <div class="work-content__text">
-                                I started my career in 2007. Worked as a PCB assembly operator. From 2009 to 2014 I worked as a leading electrical engineer in a company that develops measuring equipment and automation. Since 2014 until 2021 I worked for an electronic equipment repair company. Now I want to change the direction of development from hard to software. Since I like developing interfaces more, I chose front-end.
+                                Development of electrical circuits. PCB design. 
+                                Development of devices cases. Development of design documentation. 
+                                Introduction of company products. 
+                                Maintenance of equipment during the warranty and post-warranty period. 
+                                Programming AVR microcontrollers in assembler and C. 
+                                Development of interfaces based on Q-touch technologies.
                             </div>
                         </li>
                         <li class="work__content">
@@ -290,7 +339,9 @@ return i;
                                 <div class="work-content-road__line"></div>
                             </div>
                             <div class="work-content__text">
-                               Repair electronic
+                               Most complex repair Main-board, Power-board, TCON-board 
+                               and electrically-damaged matrix-scan PCB. 
+                               Complex repair electronic equipment in industrial machines.
                             </div>
                         </li>
                         <li class="work__content">
@@ -307,14 +358,11 @@ return i;
                                 <div class="work-content-road__line"></div>
                             </div>
                             <div class="work-content__text">
-                               Learn JS
+                               Learn JS/FE in RSSchool
                             </div>
                         </li>
                     </ul>
                 </section>
-
-
-
             </div>
         </main>
 

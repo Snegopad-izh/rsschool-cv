@@ -17,13 +17,6 @@
          url('../fonts/fira-sans-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-
-
-
-
-
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -179,8 +172,6 @@ body {
     transform:scale(1.05, 1.2);
 }
 
-
-
 .phone__pic {
     width: 24px;
     height: 24px;
@@ -261,7 +252,6 @@ body {
     transform:scale(1.1, 1.1);
 }
 
-
 .telegram__logo {
     width: 40px;
     height: 40px;
@@ -278,11 +268,39 @@ body {
     transform:scale(1.2, 1.2);
 }
 
-
 .telegram-logo__pic {
     width: 40x;
     height: 40px;
     background: url(../svg/telegram_pic.svg) no-repeat center/100%;
+}
+
+.navigation__box {
+    width: 100%;
+    height: fit-content;
+
+    background-color: #2C2C2C;
+}
+
+.navigation-box__list {
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navigation-box__item {
+    margin: 10px 10px;
+
+    background-image: linear-gradient(0deg,#7F30CB,#01DCBA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* _______________main block start__________________ */
@@ -536,7 +554,7 @@ body {
 
 /* border: 1px solid #d4d4d4; */
 
-
+/* _______________Footer block start__________________ */
 .footer__wrapper {
     max-width: 1440px;
     width: 100%;
