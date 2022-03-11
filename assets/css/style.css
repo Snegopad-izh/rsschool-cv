@@ -169,6 +169,18 @@ body {
     justify-content: center;
 }
 
+.myEmail__adress {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.myEmail__adress:hover {
+    transform:scale(1.05, 1.2);
+}
+
+
+
 .phone__pic {
     width: 24px;
     height: 24px;
@@ -227,6 +239,12 @@ body {
     width: 40px;
     height: 40px;
     background: url(../svg/github_pic.svg) no-repeat center/100%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.git__logo:hover {
+    transform:scale(1.2, 1.2);
 }
 
 .discord__logo {
@@ -235,7 +253,14 @@ body {
     background: url(../svg/discord_pic.svg) no-repeat center/100%;
     margin-top: 3px;
     margin-left: 2.5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.discord__logo:hover {
+    transform:scale(1.1, 1.1);
+}
+
 
 .telegram__logo {
     width: 40px;
@@ -245,7 +270,14 @@ body {
     background-image: linear-gradient(#01DCBA, #7F30CB);
     background-origin: border-box;
     background-clip: content-box, border-box;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.telegram__logo:hover {
+    transform:scale(1.2, 1.2);
+}
+
 
 .telegram-logo__pic {
     width: 40x;
@@ -259,11 +291,12 @@ body {
     width: 100%;
     display:flex;
 
-    padding-left: 1px;
-    padding-right: 1px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     max-width: 1440px;
     background-color: white;
-
 }   
 
 .main-content__wrapper {
@@ -275,15 +308,10 @@ body {
     margin-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    
 }   
 
 .rpofile__wrapper {
-    width: 100%;
     height: fit-content;
-
-    border: 1px solid #d4d4d4;
-
 }
 
 .profile__title {
@@ -343,10 +371,9 @@ body {
     margin-top: 20px;
 }
 
-.main__skills {
+.twoBlockWrapper__left-block {
     height: fit-content;
     width: 50%;
-    border: 1px solid #d4d4d4;
 
     display: flex;
     flex-direction:column;
@@ -357,11 +384,11 @@ body {
     padding-right: 20px;
 }
 
-.tools {
+.twoBlockWrapper__right-block {
     height: fit-content;
     width: 50%;
-    border: 1px solid #d4d4d4;
-    padding-left: ;
+
+    overflow-x: hidden;
 }
 
 .main-skills__list {
@@ -370,7 +397,6 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 
@@ -378,77 +404,137 @@ body {
     width: 15px;
     height: 20px;
     display: block;
+    margin-top: 10px;
 }
 
 .main-skills__item {
     display: flex;
     flex-direction:row;
-    align-items: center;
-    justify-content: center;
-
-
-
+    align-items:flex-start;
+    justify-content:center;
 }
 
 .main-skills-item__text {
     font-family: Fira Sans;
     font-weight: 400;
     font-size: 22px;
-    text-indent: 20px;
     line-height: 40px;
     color: #2C2C2C;
+    text-indent: 0;
+    margin-left: 15px;
+}
+
+.hljs {
+    font-size: 22px;
+}
+
+
+.work__wrapper {
+    height: fit-content;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.work__tree {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.work__content {
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    color: #2C2C2C;
+    
+    display: flex;
+    flex-direction: row;
+ 
+    flex-wrap: nowrap;
+
+    width: 100%;
 }
 
 
 
+.work-content__date {
+    min-width: 300px;
+    height:auto;
+
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.work-content-date__period {
+    font-family: Fira Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.work-content-date__company {
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #2C2C2C;
+}
+
+.work-content__road {
+    height:auto;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    min-width: 40px;
+
+}
+
+.work-content-road__pic {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.work-content-road__line {
+    width: 0;
+    height: 100%;
+    border-right: 1px dashed #4B76C4;
+}
 
 
+.work-content__text {
+    width: 100%;
+
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    text-indent: 0px;
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2C2C2C;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* border: 1px solid #d4d4d4; */
 
 
 .footer__wrapper {
@@ -465,43 +551,67 @@ body {
 }
 
 .left-box {
-    width: 182px;
+    width: fit-content;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 20px;
-}
 
-.left-box__img-copy {
-    display: block;
-    width: 19px;
+    
 }
 
 .left-box__link {
-    text-decoration: none;
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 28px;
     color: white;
-    transition: 0.4s ease-in-out;
+    margin-left: 20px;
+
+    background-image: linear-gradient(0deg,#7F30CB,#01DCBA);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
 }
 
 .left-box__link:hover {
-    color: #e7a614;
+    transform:scale(1.2, 1.2);
 }
+
+.create__date {
+    margin-left: 20px;
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+
+    background-image: linear-gradient(0deg,#7F30CB,#01DCBA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 .RSSchool-link {
-    display: block;
-    margin: 0px 20px;
-    background: url(../svg/rss.svg) no-repeat center;
-    height: 50px;
+    margin-right: 40px;
+}
+
+
+
+.RSSchool-link_pic {
     width: 100px;
-    background-size: 100%;
-    transition: 0.4s ease-in-out;
+
+    display: block;
+
+    transition: 0.3s ease-in-out;
 }
 
-.RSSchool-link:hover {
-    filter: invert(32%) sepia(97%) saturate(973%) hue-rotate(352deg) brightness(94%) contrast(92%);
+.RSSchool-link_pic:hover {
+    transform:scale(1.2, 1.2);
 }
-
 
 
 

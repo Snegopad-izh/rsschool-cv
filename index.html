@@ -7,6 +7,11 @@
     <title>CV</title>
     <link rel="icon" sizes="96x96" href="https://img.icons8.com/color/96/000000/rich.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/summerfruit-light.min.css">
+    <script src="./assets/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -16,9 +21,9 @@
                     <div class="photo"></div>
                 </div>
                 <div class="left__text">
-                    <div class="myName">
+                    <h1 class="myName">
                         Igor Radchenko
-                    </div>
+                    </h1>
                     <div class="myFunction">
                         FE developer
                     </div>
@@ -28,7 +33,7 @@
                 <div class="myPhone">
                     <div class="phone__pic"></div>
                     <div class="myPhone__number">
-                        +7 912 006 82 73
+                        +7 912 006 &2 73
                     </div>
                 </div>
                 <div class="myEmail">
@@ -65,10 +70,10 @@
 
         <main class="main__wrapper">
             <div class="main-content__wrapper">
-                <section class="rpofile__wrapper">
+                <section class="work__wrapper">
                     <div class="profile__title">
                         <img src="/assets/svg/profile_logo.svg" alt="profile_pic" class="profile_logo">
-                        <h3 class="profile_caption">Profile</h3>
+                        <h2 class="profile_caption">Profile</h2>
                         <div class="profile_line"></div>
                     </div>
 
@@ -84,19 +89,30 @@
                         </p>
                     </div>
                 </section>
-                
                 <div class="twoBlockWrapper">
-                    <section class="main__skills">
+                    <section class="twoBlockWrapper__left-block">
                         <div class="profile__title">
                             <img src="/assets/svg/skills_pic.svg" alt="skills_pic" class="profile_logo">
-                            <h3 class="profile_caption">Main&nbsp;Skills</h3>
+                            <h2 class="profile_caption">Main&nbsp;Skills</h2>
                             <div class="profile_line"></div>
                         </div>
                         <ul class="main-skills__list">
                             <li class="main-skills__item">
                                 <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
                                 <p class="main-skills-item__text">
-                                    Front-End Development
+                                    Solving algorithmic problems
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    Knowledge of basic principles of programming
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    Site layout according to the template
                                 </p>
                             </li>
                             <li class="main-skills__item">
@@ -107,11 +123,10 @@
                             </li>
                         </ul>
                     </section>
-
-                    <section class="tools">
+                    <section class="twoBlockWrapper__right-block">
                         <div class="profile__title">
                             <img src="/assets/svg/tools_pic.svg" alt="skills_pic" class="profile_logo">
-                            <h3 class="profile_caption">Tools&nbsp;&&nbsp;Languages</h3>
+                            <h2 class="profile_caption">Tools</h2>
                             <div class="profile_line"></div>
                         </div>
                         <ul class="main-skills__list">
@@ -127,40 +142,193 @@
                                     HTML5, CSS3
                                 </p>
                             </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    VCS GIT
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    VS Code
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    Figma
+                                </p>
+                            </li>
+
+
+
+
                             
                         </ul>
                     </section>
-
-
-
-
                 </div>
-            
+                <div class="twoBlockWrapper">
+                    <section class="twoBlockWrapper__left-block">
+                        <div class="profile__title">
+                            <img src="/assets/svg/education_pic.svg" alt="skills_pic" class="profile_logo">
+                            <h2 class="profile_caption">Education</h2>
+                            <div class="profile_line"></div>
+                        </div>
+                        <ul class="main-skills__list">
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    ISTU 2006-2010 Bachelor of Engineering and <br>Technology of Radioelectronic (sp.210201)
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="twoBlockWrapper__right-block">
+                        <div class="profile__title">
+                            <img src="/assets/svg/language_pic.svg" alt="skills_pic" class="profile_logo">
+                            <h2 class="profile_caption">Languages</h2>
+                            <div class="profile_line"></div>
+                        </div>
+                        <ul class="main-skills__list">
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    Russian - Native
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    English - A2
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="twoBlockWrapper">
+                    <section class="twoBlockWrapper__left-block">
+                        <div class="profile__title">
+                            <img src="/assets/svg/courses_pic.svg" alt="skills_pic" class="profile_logo">
+                            <h2 class="profile_caption">Courses</h2>
+                            <div class="profile_line"></div>
+                        </div>
+                        <ul class="main-skills__list">
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    JS/FE Pre-School 2022
+                                </p>
+                            </li>
+                            <li class="main-skills__item">
+                                <img src="/assets/svg/li_marker.svg" alt="li_marker" class="li__marker">
+                                <p class="main-skills-item__text">
+                                    Cutting and sewing
+                                </p>
+                            </li>
 
 
-
+                        </ul>
+                    </section>
+                    <section class="twoBlockWrapper__right-block">
+                        <div class="profile__title">
+                            <img src="/assets/svg/js_pic.svg" alt="skills_pic" class="profile_logo">
+                            <h2 class="profile_caption">Code&nbsp;example</h2>
+                            <div class="profile_line"></div>
+                        </div>
+                        <ul class="main-skills__list">
+                            <li class="main-skills__item">
+                                <p class="main-skills-item__text">
+                                    <pre><code class="language-js">function getNum(element) {
+let i = 0;
+while(element = element.previousSibling) {
+    element.nodeType == 1 && i++;
+}
+return i;
+}                                    </code></pre>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                
+                <section class="work__wrapper">
+                    <div class="profile__title">
+                        <img src="/assets/svg/work_pic.svg" alt="profile_pic" class="profile_logo">
+                        <h2 class="profile_caption">Work&nbsp;Experiences</h2>
+                        <div class="profile_line"></div>
+                    </div>
+                    <ul class="work__tree">
+                        <li class="work__content">
+                            <div class="work-content__date">
+                                <h3 class="work-content-date__period">
+                                    <date>2009-2014</date>
+                                </h3>
+                                <p class="work-content-date__company">
+                                    VIPP "Tekhnica"
+                                </p>
+                            </div>
+                            <div class="work-content__road">
+                                <img src="/assets/svg/road-pic.svg" alt="profile_pic" class="work-content-road__pic">
+                                <div class="work-content-road__line"></div>
+                            </div>
+                            <div class="work-content__text">
+                                I started my career in 2007. Worked as a PCB assembly operator. From 2009 to 2014 I worked as a leading electrical engineer in a company that develops measuring equipment and automation. Since 2014 until 2021 I worked for an electronic equipment repair company. Now I want to change the direction of development from hard to software. Since I like developing interfaces more, I chose front-end.
+                            </div>
+                        </li>
+                        <li class="work__content">
+                            <div class="work-content__date">
+                                <h3 class="work-content-date__period">
+                                    <date>2014-2021</date>
+                                </h3>
+                                <p class="work-content-date__company">
+                                    Izhevskoye teleatelie
+                                </p>
+                            </div>
+                            <div class="work-content__road">
+                                <img src="/assets/svg/road-pic.svg" alt="profile_pic" class="work-content-road__pic">
+                                <div class="work-content-road__line"></div>
+                            </div>
+                            <div class="work-content__text">
+                               Repair electronic
+                            </div>
+                        </li>
+                        <li class="work__content">
+                            <div class="work-content__date">
+                                <h3 class="work-content-date__period">
+                                    <date>2021-Current</date>
+                                </h3>
+                                <p class="work-content-date__company">
+                                    JavaScript/Front-end 2022Q1
+                                </p>
+                            </div>
+                            <div class="work-content__road">
+                                <img src="/assets/svg/road-pic.svg" alt="profile_pic" class="work-content-road__pic">
+                                <div class="work-content-road__line"></div>
+                            </div>
+                            <div class="work-content__text">
+                               Learn JS
+                            </div>
+                        </li>
+                    </ul>
+                </section>
 
 
 
             </div>
         </main>
 
-
-
-
-
-
-
         <footer class="footer__wrapper">
             <div class="left-box">
-                <img src="./assets/svg/copy.svg" alt="copy" class="left-box__img-copy">
-                <time>2022</time>
-                <a href="https://github.com/Snegopad-izh" class="left-box__link">github</a>
+                <time class="create__date">&copy; 2022</time>
+                <a href="https://github.com/Snegopad-izh" class="left-box__link">GITHUB</a>
             </div>
-            <a href="https://rs.school/js-stage0/" class="RSSchool-link"></a>
+            <a href="https://rs.school/js-stage0/" class="RSSchool-link">
+                <img src="/assets/svg/rss.svg" alt="RSSchool-link" class="RSSchool-link_pic">
+            </a>
         </footer>
     </div>
     
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
