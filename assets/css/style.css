@@ -40,6 +40,7 @@ ol, ul {
 	list-style: none;
 }
 
+a,
 a.text:active, /* активная/посещенная ссылка */
 a.text:hover,  /* при наведении */
 a.text {
@@ -301,7 +302,15 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.navigation-box__item:hover {
+    transform:scale(1.2, 1.2);
+}
+
 
 /* _______________main block start__________________ */
 .main__wrapper {
