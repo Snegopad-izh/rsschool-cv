@@ -110,7 +110,7 @@ body {
 
 .photo {
     border-radius: 50%;
-    width: 110px;
+    width: 100px;
     height: 110px;
     background: url(../img/Photo.jpg) no-repeat center/100%;
 }
