@@ -283,6 +283,9 @@ body {
 }
 
 .navigation-box__list {
+    margin: 0 auto;
+    max-width: 1080px;
+
     font-family: Fira Sans;
     font-weight: 700;
     font-size: 20px;
@@ -290,7 +293,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -333,6 +336,7 @@ body {
     margin: 0 auto;
     flex-direction: column;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
 }   
@@ -560,6 +564,17 @@ body {
     color: #2C2C2C;
 }
 
+.work_content__link {
+    color: #4B76C4;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.work_content__link:hover {
+    color: #7f30cb;
+}
+
+
 
 /* border: 1px solid #d4d4d4; */
 
@@ -568,7 +583,7 @@ body {
     max-width: 1440px;
     width: 100%;
     min-height: 60px;
-    
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -588,24 +603,6 @@ body {
     
 }
 
-.left-box__link {
-    font-family: Fira Sans;
-    font-weight: 700;
-    font-size: 28px;
-    color: white;
-    margin-left: 20px;
-
-    background-image: linear-gradient(0deg,#7F30CB,#01DCBA);
-    
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s ease;
-}
-
-.left-box__link:hover {
-    transform:scale(1.2, 1.2);
-}
 
 .create__date {
     margin-left: 20px;
@@ -622,30 +619,19 @@ body {
 
 
 
-.RSSchool-link {
+.designedBy {
     margin-right: 40px;
+    margin-left: 20px;
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+    background-image: linear-gradient(0deg,#7F30CB,#01DCBA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
-
-
-
-.RSSchool-link_pic {
-    width: 100px;
-
-    display: block;
-
-    transition: 0.3s ease-in-out;
-}
-
-.RSSchool-link_pic:hover {
-    transform:scale(1.2, 1.2);
-}
-
-
-
-
-
-
-
 
 @media screen and (max-width: 720px) {
 
@@ -664,7 +650,11 @@ body {
 
 }
 
-
+@media screen and (max-width: 445px) {
+    .center__block {
+        margin-top: 40px;
+    }
+}
 
 
 

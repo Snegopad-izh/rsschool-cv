@@ -1,2 +1,2 @@
-const a = 'fix deploy problem';
-console.log(a);
+const message = 'Контент на вакансию Front-end';
+console.log(message);
